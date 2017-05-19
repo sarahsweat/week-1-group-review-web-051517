@@ -1,5 +1,7 @@
 ## QUESTION 1
 
+
+
 pokemon = [
   {
     "id": 1,
@@ -62,8 +64,13 @@ pokemon = [
 
 
 # How would you get the url for Bulbasaur's ability?
+      #pokemon[0]["abilities"][0]["ability"]["url"]
 # How would you return the first pokemon with base experience over 40?
+      #Iterate through the array, evaluating each hash to find the first instance where the experience was over 40(using array method find)
 # How would you return ALL OF THE pokemon with base experience over 40? (Gotta catch em all)
+      #Iterate through the array, evaluating each hash to find the every instance where the experience was over 40(using array method select)
 # How would you return an array of all of the pokemon's names?
+      #Iterate through the hashes and shovel in the name value into an empty array
 # How would you determine whether or not the pokemon array contained any pokemon with a weight greater than 60?
-#  whatever method you use should return true if there are any such pokemon, false if not.
+      # Assuming none exist == false, Start at false and if Array#any? returns true that its weight is > 60 than we know that it exists.
+      # Whatever method you use should return true if there are any such pokemon, false if not.
